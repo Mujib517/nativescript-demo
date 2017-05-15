@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
-import { HttpModule } from '@angular/http';
+import { NativeScriptHttpModule } from "nativescript-angular/http";
 
 import { TaskService } from './task.service';
 
 @NgModule({
-    imports: [HttpModule],
+    imports: [NativeScriptHttpModule],
     providers: [TaskService]
 })
 
