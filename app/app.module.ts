@@ -1,11 +1,13 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptModule } from "nativescript-angular/nativescript.module";
-import { AppRoutingModule } from "./app.routing";
-import { AppComponent } from "./app.component";
 
+import { AppRoutingModule } from "./app.routing";
+import { SharedModule } from './shared/shared.module';
+
+import { AppComponent } from "./app.component";
 import { HomeComponent } from "./home/home.component";
 import { TaskListComponent } from "./task-list/task-list.component";
-import {TaskComponent} from './task/task.component';
+import { TaskComponent } from './task/task.component';
 
 
 @NgModule({
@@ -14,7 +16,8 @@ import {TaskComponent} from './task/task.component';
     ],
     imports: [
         NativeScriptModule,
-        AppRoutingModule
+        AppRoutingModule,
+        SharedModule
     ],
     declarations: [
         AppComponent,

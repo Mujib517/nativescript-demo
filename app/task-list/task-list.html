@@ -1,7 +1,7 @@
 <ActionBar title="Task Manager" class="action-bar">
 </ActionBar>
 
-<StackLayout>
+<StackLayout class="page">
     <ListView [items]="tasks">
         <ng-template let-item="item" class="list-group">
             <task-component [task]="item"></task-component>
