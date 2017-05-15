@@ -1,0 +1,11 @@
+<ActionBar title="Task Manager" class="action-bar">
+</ActionBar>
+
+<StackLayout>
+    <ListView [items]="tasks">
+        <ng-template let-item="item" class="list-group">
+            <Label [text]="item.id"></Label>
+            <!--<task-component [task]="item"></task-component>-->
+        </ng-template>
+    </ListView>
+</StackLayout>
