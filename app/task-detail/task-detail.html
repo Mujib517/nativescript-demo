@@ -1,0 +1,8 @@
+<ActionBar title="{{user?.name}}"></ActionBar>
+
+<StackLayout>
+    <Image class="image-circle" [src]="user?.avatar_url"></Image>
+    <Label [text]="user?.login" class="text-center"></Label>
+    <Label text="Repos: {{user?.public_repos}}" class="text-center"></Label>
+</StackLayout>
+

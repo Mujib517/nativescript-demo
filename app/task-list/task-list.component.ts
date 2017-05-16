@@ -11,11 +11,13 @@ export class TaskListComponent {
 
     tasks: any[];
 
-    constructor(private taskSvc: TaskService) {
-        
-        taskSvc.get().subscribe(
+    constructor(private taskSvc: TaskService) { }
+
+    ngOnInit() {
+        this.taskSvc.get()
+            .subscribe(
             (response) => this.tasks = response,
             (err) => console.log(err)
-        );
+            );
     }
 }

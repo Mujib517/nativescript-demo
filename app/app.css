@@ -19,3 +19,7 @@ refer to http://docs.nativescript.org/ui/theme.
     font-weight: bold;
     font-family: "iconmoon";
 }
+.img{
+    width:150;
+    height:100;
+}

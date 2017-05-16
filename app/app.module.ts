@@ -8,6 +8,7 @@ import { AppComponent } from "./app.component";
 import { HomeComponent } from "./home/home.component";
 import { TaskListComponent } from "./task-list/task-list.component";
 import { TaskComponent } from './task/task.component';
+import { TaskDetailComponent } from './task-detail/task-detail.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { TaskComponent } from './task/task.component';
         AppComponent,
         HomeComponent,
         TaskComponent,
-        TaskListComponent
+        TaskListComponent,
+        TaskDetailComponent
     ],
     providers: [
     ],
