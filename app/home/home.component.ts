@@ -7,12 +7,12 @@ import { Router } from '@angular/router';
     <ActionBar title="Task Manager" class="action-bar">
     </ActionBar>
 
-<Button dock="bottom" class="btn" text="Go To Tasks" [nsRouterLink]="['/tasks']"></Button>
+<Button dock="bottom" class="btn icon" text="&#xf015; Home"  [nsRouterLink]="['/tasks']"></Button>
 
     <StackLayout>
             <TabView #tabview dock="bottom">
             <StackLayout *tabItem="{title: 'Tab1'}">
-                <Label text="This is Label in Tab 1"></Label>
+                <Label text="&#xf015;" class="icon"></Label>
             </StackLayout>
             <StackLayout *tabItem="{title: 'Tab2'}" (tap)="onTap()" [nsRouterLink]="['/tasks']">
                 <Label text="This is Label in Tab 2"></Label>
