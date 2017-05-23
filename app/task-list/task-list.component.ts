@@ -10,13 +10,20 @@ import { TaskService } from './../shared/task.service';
 export class TaskListComponent {
 
     tasks: any[];
+    listLoaded: boolean = false;
+    isLoading: boolean = false;
 
     constructor(private taskSvc: TaskService) { }
 
     ngOnInit() {
+        this.isLoading = true;
         this.taskSvc.get()
             .subscribe(
-            (response) => this.tasks = response,
+            (response) => {
+                this.tasks = response;
+                this.listLoaded = true;
+                this.isLoading = false;
+            },
             (err) => console.log(err)
             );
     }

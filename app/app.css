@@ -27,3 +27,19 @@ refer to http://docs.nativescript.org/ui/theme.
     font-family: "FontAwesome";
     font-size:20px;
 }
+
+
+ListView{
+    opacity: 0
+}
+
+.visible{
+    animation-name: show;
+    animation-duration:1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes show{
+    from {opacity: 0;}
+    to{opacity:1;}
+}
